@@ -14,6 +14,13 @@ const productSlice = createSlice({
           if (product) {
             product.stock -= action.payload.quantity;
           }
+          state.items.push({
+            id: item.id,
+            name: item.name,  
+            image: item.image, // Include image
+            quantity: 1,
+            totalPrice: item.price
+          });
         },
       },
 })

@@ -45,8 +45,7 @@ function Cart() {
                 </button>
               </div>
               <button onClick={() => handleRemove(item.id)}>Remove</button>
-            
-              <Link to="/checkout">
+            <Link to="/checkout">
                 <button>Proceed to Checkout</button>
             </Link>
             </div>
